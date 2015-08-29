@@ -1,0 +1,11 @@
+[user]
+	name = Elle
+	email = teregc@hotmail.es
+[core]
+	editor = vim
+[color]
+	ui = true
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
