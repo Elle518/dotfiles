@@ -88,6 +88,9 @@ set mouse=a                 " Allow mouse to move around
 
 set wildmenu                " Show available completions (use TAB)
 
+set nocursorline
+let g:netrw_cursor=0
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  05. BACKUP/UNDO                                                        "
