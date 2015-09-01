@@ -9,3 +9,10 @@
 	helper = osxkeychain
 [push]
 	default = simple
+[alias]
+	co = checkout
+	br = branch
+	st = status
+	unstage = reset HEAD --
+	cm = commit -m
+	log1 = log --oneline
