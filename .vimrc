@@ -74,7 +74,7 @@ colorscheme duna    " Set the color scheme
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 if has('gui_running')                  " Set font
-  set guifont=Inconsolata:h18
+  set guifont=Monaco:h14
 endif
 set noantialias                        " Disable antialias
 
