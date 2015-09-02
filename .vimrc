@@ -159,4 +159,5 @@ noremap <down> <NOP>
 noremap <left> <NOP>
 noremap <right> <NOP>
 
-
+" Compile and run C programs
+map <F8> :w<CR> :!gcc % -o %< && ./%<<CR>
