@@ -42,6 +42,7 @@ Plugin 'VundleVim/Vundle.vim'
 " MY PLUGINGS
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()           " All plugins must be before this line
