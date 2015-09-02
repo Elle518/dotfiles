@@ -45,6 +45,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tomtom/tcomment_vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()           " All plugins must be before this line
