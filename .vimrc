@@ -73,7 +73,9 @@ colorscheme duna    " Set the color scheme
 " Show syntax highlighting groups for word under cursor
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
-set guifont=Monaco:h14                 " Set font
+if has('gui_running')                  " Set font
+  set guifont=Inconsolata:h18
+endif
 set noantialias                        " Disable antialias
 
 
