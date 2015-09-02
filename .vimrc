@@ -14,6 +14,7 @@
 "   07. SEARCH .................. Highlight, ignorecase, etc.             "
 "   08. EDITOR .................. Edition preferences                     "
 "   09. CUSTOM COMMANDS ......... Mapping, aliasing, etc.                 "
+"   10. PLUGINS SETTINGS ........ Plugins preferences, settings, etc.     "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -161,3 +162,11 @@ noremap <right> <NOP>
 
 " Compile and run C programs
 map <F8> :w<CR> :!gcc % -o %< && ./%<<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  10. PLUGINS SETTINGS                                                   "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"NERDTree
+let NERDTreeShowHidden=1                     " Show hidden files by default
+let NERDTreeIgnore=['\.DS_Store$', '\.localized$', '\.netrwhist$']
