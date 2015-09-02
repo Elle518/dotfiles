@@ -142,7 +142,7 @@ set hlsearch            " Highlight search results. To cancel :noh
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set backspace=indent,eol,start   " Backspace over everything in insert mode
 
-set list                    " Show hidden characters
+set nolist                    " Not show hidden characters by default
 set listchars=tab:▸\ ,eol:¬,extends:>,precedes:<,space:·,trail:^,nbsp:%
 " Shortcut to rapidly toggle `set list` using \l
 nmap <leader>l :set list!<CR>
