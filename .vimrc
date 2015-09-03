@@ -148,8 +148,6 @@ set listchars=tab:▸\ ,eol:¬,extends:>,precedes:<,space:·,trail:^,nbsp:%
 " Shortcut to rapidly toggle `set list` using \l
 nmap <leader>l :set list!<CR>
 
-set paste                   " Avoid unexpected effects when paste in Vim
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  09. CUSTOM COMMANDS                                                    "
