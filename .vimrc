@@ -188,5 +188,5 @@ vnoremap _' <Esc>`>a'<Esc>`<i'<Esc>/[']<CR>:noh<CR>a
 "NERDTree
 let NERDTreeShowHidden=1                     " Show hidden files by default
 let NERDTreeIgnore=['\.DS_Store$', '\.localized$', '\.netrwhist$']
-
+let NERDTreeShowBookmarks=1
 
