@@ -161,6 +161,22 @@ noremap <right> <NOP>
 " Compile and run C programs
 map <F8> :w<CR> :!gcc % -o %< && ./%<<CR>
 
+" Automatic bracket settings
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {<CR>}<ESC>O<TAB>
+inoremap " ""<ESC>i
+inoremap ' ''<ESC>i
+" CTRL-j getaway
+inoremap <C-j> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
+
+" Late bracketing of text
+vnoremap _( <Esc>`>a)<Esc>`<i(<Esc>/[)]<CR>:noh<CR>a
+vnoremap _[ <Esc>`>a]<Esc>`<i[<Esc>/[]]<CR>:noh<CR>a
+vnoremap _{ <Esc>`>a}<Esc>`<i{<Esc>/[}]<CR>:noh<CR>a
+vnoremap _" <Esc>`>a"<Esc>`<i"<Esc>/["]<CR>:noh<CR>a
+vnoremap _' <Esc>`>a'<Esc>`<i'<Esc>/[']<CR>:noh<CR>a
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  10. PLUGINS SETTINGS                                                   "
@@ -168,3 +184,5 @@ map <F8> :w<CR> :!gcc % -o %< && ./%<<CR>
 "NERDTree
 let NERDTreeShowHidden=1                     " Show hidden files by default
 let NERDTreeIgnore=['\.DS_Store$', '\.localized$', '\.netrwhist$']
+
+
