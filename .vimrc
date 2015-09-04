@@ -79,6 +79,10 @@ if has('gui_running')                  " Set font
 endif
 set noantialias                        " Disable antialias
 
+if has('gui_running')                  " Set GUI transparency
+	set transparency=15
+endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  04. VIM UI                                                             "
