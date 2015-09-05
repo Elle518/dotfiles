@@ -168,7 +168,7 @@ map <F8> :w<CR> :!gcc % -o %< && ./%<<CR>
 " Automatic bracket settings
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
-inoremap { {<CR>}<ESC>O<TAB>
+inoremap { {<CR>}<ESC>O
 inoremap " ""<ESC>i
 " CTRL-j getaway
 inoremap <C-j> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
