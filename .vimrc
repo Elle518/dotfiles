@@ -170,7 +170,6 @@ inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {<CR>}<ESC>O<TAB>
 inoremap " ""<ESC>i
-inoremap ' ''<ESC>i
 " CTRL-j getaway
 inoremap <C-j> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
 
