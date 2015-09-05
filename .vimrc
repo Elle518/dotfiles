@@ -189,3 +189,5 @@ let NERDTreeShowHidden=1                     " Show hidden files by default
 let NERDTreeIgnore=['\.DS_Store$', '\.localized$', '\.netrwhist$']
 let NERDTreeShowBookmarks=1
 
+"YouCompleteMe
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
