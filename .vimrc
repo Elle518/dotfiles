@@ -163,7 +163,11 @@ noremap <left> <NOP>
 noremap <right> <NOP>
 
 " Compile and run C programs
-map <F8> :w<CR> :!gcc % -o %< && ./%<<CR>
+if has('gui_running')
+	map <F8> :w<CR> :!gcc -Wall % -o %< && ./%<<CR>
+else
+	map <F8> :w<CR> :!clear && gcc -Wall % -o %< && ./%<<CR>
+endif
 
 " Automatic bracket settings
 inoremap ( ()<ESC>i
