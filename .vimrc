@@ -139,7 +139,7 @@ set tabstop=4
 set ignorecase          " Ignore case when search is all lowercase
 set smartcase           " But recognize uppercase if it is specified
 set incsearch           " Do incremental searching
-set hlsearch            " Highlight search results. To cancel :noh
+set nohlsearch          " Turn off search highlighting
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
