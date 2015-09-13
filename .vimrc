@@ -147,10 +147,12 @@ set nohlsearch          " Turn off search highlighting
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set backspace=indent,eol,start   " Backspace over everything in insert mode
 
-set nolist                    " Not show hidden characters by default
+set nolist                       " Not show hidden characters by default
 set listchars=tab:▸\ ,eol:¬,extends:>,precedes:<,space:·,trail:^,nbsp:%
 " Shortcut to rapidly toggle `set list` using \l
 nmap <leader>l :set list!<CR>
+
+set autowrite                    " No write warning message
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
