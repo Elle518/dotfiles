@@ -123,9 +123,8 @@ if has ("autocmd")
     filetype plugin indent on
 endif
 
-set autoindent      " Keep indentation from previous line
-set copyindent
-set preserveindent
+autocmd FileType c,cpp :set cindent    " Enable C-style indentation
+set smartindent                        " Add extra level of indentation
 
 set noexpandtab
 set shiftwidth=4
