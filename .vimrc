@@ -104,6 +104,8 @@ set wildmenu                " Show available completions (use TAB)
 set nocursorline
 let g:netrw_cursor=0
 
+set shortmess+=I            " Turn off introductory message
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  05. BACKUP/UNDO                                                        "
