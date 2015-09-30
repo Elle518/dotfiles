@@ -154,6 +154,7 @@ set listchars=tab:▸\ ,eol:¬,extends:>,precedes:<,space:·,trail:^,nbsp:%
 nmap <leader>l :set list!<CR>
 
 set autowrite                    " No write warning message
+set clipboard+=unnamed           " Stick the content from the unnamed register in the clipboard
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
