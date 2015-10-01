@@ -19,15 +19,16 @@
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  01. GENERAL                                                            "
+"  01. GENERAL ~>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible          " Get rid of Vi compatibility mode
                           " Must be first!
 syntax on                 " Enable syntax highlighting
 
+"<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  02. PLUGINS                                                            "
+"  02. PLUGINS ~>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype off                " Required to install Vundle
 
@@ -64,9 +65,10 @@ filetype plugin indent on   " Required
 "                   - append `!` to auto-approve removal
 " see :h vundle for more details or wiki for FAQ
 
+"<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  03. THEME/COLORS                                                       "
+"  03. THEME/COLORS ~>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256        " Set terminal color to 256
 colorscheme duna    " Set the color scheme
@@ -83,9 +85,10 @@ if has('gui_running')                  " Set GUI transparency
 	set transparency=15
 endif
 
+"<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  04. VIM UI                                                             "
+"  04. VIM UI ~>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set laststatus=2            " Show statusbar
 set ruler                   " Show the cursor position in the file
@@ -106,9 +109,10 @@ let g:netrw_cursor=0
 
 set shortmess+=I            " Turn off introductory message
 
+"<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  05. BACKUP/UNDO                                                        "
+"  05. BACKUP/UNDO ~>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set undofile                    " Keep undo files
 set undodir=~/.vim/undo         " Where to put undo files
@@ -116,9 +120,10 @@ set backup                      " Keep backup file
 set backupdir=~/.vim/backup     " Where to put the backup files
 set directory=~/.vim/backup     " Where to put the swap files
 
+"<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  06. INDENTATION                                                        "
+"  06. INDENTATION ~>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has ("autocmd")
     " File type detection. Indent based on filetype. Recommended.
@@ -133,18 +138,20 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 
+"<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  07. SEARCH                                                             "
+"  07. SEARCH ~>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set ignorecase          " Ignore case when search is all lowercase
 set smartcase           " But recognize uppercase if it is specified
 set incsearch           " Do incremental searching
 set nohlsearch          " Turn off search highlighting
 
+"<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  08. EDITOR                                                             "
+"  08. EDITOR ~>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set backspace=indent,eol,start   " Backspace over everything in insert mode
 
@@ -154,11 +161,19 @@ set listchars=tab:▸\ ,eol:¬,extends:>,precedes:<,space:·,trail:^,nbsp:%
 nmap <leader>l :set list!<CR>
 
 set autowrite                    " No write warning message
-set clipboard+=unnamed           " Stick the content from the unnamed register in the clipboard
+set clipboard+=unnamed           " Stick the content from the unnamed
+                                 " register in the clipboard
 
+set foldmethod=syntax            " Fold content based on pre-existing
+                                 " syntax rules
+
+" Fold method only for .vimrc file
+autocmd BufRead .vimrc  setlocal foldmethod=marker foldmarker=~>,<~
+
+"<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  09. CUSTOM COMMANDS                                                    "
+"  09. CUSTOM COMMANDS ~>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Completely disable the use of the arrow keys in command and visual modes
 noremap <up> <NOP>
@@ -199,9 +214,10 @@ au BufWritePre,FileWritePre *.c exe "normal ma"
 au BufWritePre,FileWritePre *.c exe "1," . 7 . "g/Date modified:.*/s//Date modified: " .strftime("%d-%m-%Y")
 au BufWritePost,FileWritePost *.c exe "normal `a" 
 
+"<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  10. PLUGINS SETTINGS                                                   "
+"  10. PLUGINS SETTINGS ~>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "NERDTree
 let NERDTreeShowHidden=1                     " Show hidden files by default
@@ -210,3 +226,5 @@ let NERDTreeShowBookmarks=1
 
 "YouCompleteMe
 let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+
+"<~
