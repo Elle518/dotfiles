@@ -24,6 +24,8 @@
 set nocompatible          " Get rid of Vi compatibility mode
                           " Must be first!
 syntax on                 " Enable syntax highlighting
+scriptencoding utf-8
+set encoding=utf-8
 
 "<~
 
