@@ -46,3 +46,5 @@ Session.vim
 ## Backup/undo directories
 /.vim/undo
 /.vim/backup
+/.vim/colors
+/.vim/bundle
