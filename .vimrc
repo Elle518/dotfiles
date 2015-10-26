@@ -190,6 +190,13 @@ else
 	map <F8> :w<CR> :!clear && gcc -Wall % -o %< && ./%<<CR>
 endif
 
+" Run Python programs
+if has('gui_running')
+	map <F7> :w<CR> :!python %<CR>
+else
+	map <F7> :w<CR> :!clear && python %<CR>
+endif
+
 " Automatic bracket settings
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
