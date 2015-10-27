@@ -39,3 +39,26 @@ Open Vim and run
 ~~~
 :PluginInstall
 ~~~
+
+##YCM semantic completion support for C-family languages
+~~~
+sudo apt-get install build-essential cmake
+sudo apt-get install python-dev
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
+~~~
+
+Download the latest version of `libclang` from [LLVM.org](http://llvm.org/releases/download.html).
+Select **Clang for x86 64 Ubuntu** from the Pre-Built Binaries list.
+
+~~~
+mkdir ~/ycm_temp/llvm_root_dir
+~~~
+
+Extract `libclang` inside `llvm_root_dir` (with `bin`, `lib`, `include`...)
+
+~~~
+cd ~/ycm_build
+cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=~/ycm_temp/llvm_root_dir . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+cmake --build . --target ycm_support_libs --config Release
+~~~
