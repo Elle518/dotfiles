@@ -214,7 +214,7 @@ vnoremap _{ <Esc>`>a}<Esc>`<i{<Esc>/[}]<CR>:noh<CR>a
 vnoremap _" <Esc>`>a"<Esc>`<i"<Esc>/["]<CR>:noh<CR>a
 vnoremap _' <Esc>`>a'<Esc>`<i'<Esc>/[']<CR>:noh<CR>a
 
-"Templates
+"C & C++ Templates
 au BufNewFile *.c 0r ~/.vim/skeleton/skeleton.c
 au BufNewFile *.c exe "1," . 7 . "g/File:.*/s//File: " .expand("%")
 au BufNewFile *.c exe "1," . 7 . "g/Date created:.*/s//Date created: " .strftime("%d-%m-%Y")
@@ -223,6 +223,15 @@ au BufNewFile *.c exe "normal 3k$"
 au BufWritePre,FileWritePre *.c exe "normal ma"
 au BufWritePre,FileWritePre *.c exe "1," . 7 . "g/Date modified:.*/s//Date modified: " .strftime("%d-%m-%Y")
 au BufWritePost,FileWritePost *.c exe "normal `a" 
+
+au BufNewFile *.cpp 0r ~/.vim/skeleton/skeleton.cpp
+au BufNewFile *.cpp exe "1," . 7 . "g/File:.*/s//File: " .expand("%")
+au BufNewFile *.cpp exe "1," . 7 . "g/Date created:.*/s//Date created: " .strftime("%d-%m-%Y")
+au BufNewFile *.cpp exe "1," . 7 . "g/Author:.*/s//Author: " .$USER
+au BufNewFile *.cpp exe "normal 3k$"
+au BufWritePre,FileWritePre *.cpp exe "normal ma"
+au BufWritePre,FileWritePre *.cpp exe "1," . 7 . "g/Date modified:.*/s//Date modified: " .strftime("%d-%m-%Y")
+au BufWritePost,FileWritePost *.cpp exe "normal `a" 
 
 "<~
 
