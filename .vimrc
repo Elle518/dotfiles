@@ -193,9 +193,9 @@ endif
 
 " Run Python programs
 if has('gui_running')
-	map <F7> :w<CR> :!python %<CR>
+	map <F7> :w<CR> :!python3 %<CR>
 else
-	map <F7> :w<CR> :!clear && python %<CR>
+	map <F7> :w<CR> :!clear && python3 %<CR>
 endif
 
 " Automatic bracket settings
