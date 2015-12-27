@@ -162,8 +162,11 @@ set backspace=indent,eol,start   " Backspace over everything in insert mode
 
 set nolist                       " Not show hidden characters by default
 set listchars=tab:▸\ ,eol:¬,extends:>,precedes:<,space:·,trail:^,nbsp:%
-" Shortcut to rapidly toggle `set list` using \l
+" Shortcut to rapidly toggle `set list` using <Space>l
 nnoremap <Leader>l :set list!<CR>
+
+" Shortcut to rapidly toggle 'set spell' using <Space>s
+nnoremap <Leader>s :set spell!<CR>
 
 set autowrite                    " No write warning message
 set clipboard+=unnamed           " Stick the content from the unnamed
