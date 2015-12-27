@@ -29,6 +29,12 @@ set encoding=utf-8
 
 let mapleader="\<Space>"  " Custom leader key
 
+"Source $MYVIMRC reloads the saved $MYVIMRC
+nnoremap <Leader>sv :source $MYVIMRC<CR>
+
+"Open $MYVIMRC for editing, or use :e $MYVIMRC
+nnoremap <Leader>ev :tabedit $MYVIMRC<CR>
+
 "<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
