@@ -27,6 +27,8 @@ syntax on                 " Enable syntax highlighting
 scriptencoding utf-8
 set encoding=utf-8
 
+let mapleader="\<Space>"  " Custom leader key
+
 "<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -161,7 +163,7 @@ set backspace=indent,eol,start   " Backspace over everything in insert mode
 set nolist                       " Not show hidden characters by default
 set listchars=tab:▸\ ,eol:¬,extends:>,precedes:<,space:·,trail:^,nbsp:%
 " Shortcut to rapidly toggle `set list` using \l
-nmap <leader>l :set list!<CR>
+nnoremap <Leader>l :set list!<CR>
 
 set autowrite                    " No write warning message
 set clipboard+=unnamed           " Stick the content from the unnamed
@@ -183,6 +185,7 @@ noremap <up> <NOP>
 noremap <down> <NOP>
 noremap <left> <NOP>
 noremap <right> <NOP>
+noremap <Space> <NOP>
 
 " Compile and run C programs
 if has('gui_running')
