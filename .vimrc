@@ -174,6 +174,9 @@ nnoremap <Leader>l :set list!<CR>
 " Shortcut to rapidly toggle 'set spell' using <Space>s
 nnoremap <Leader>s :set spell!<CR>
 
+" Shortcut to rapidly toggle 'set modifiable' using <Space>m
+nnoremap <Leader>m :set modifiable!<CR>
+
 set autowrite                    " No write warning message
 set clipboard+=unnamed           " Stick the content from the unnamed
                                  " register in the clipboard
