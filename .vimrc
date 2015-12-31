@@ -206,6 +206,9 @@ noremap <Space> <NOP>
 " Disable the use of Ex-mode
 nnoremap Q <NOP>
 
+" Map <ESC> key in insert mode
+imap jk <ESC>
+
 " Compile and run C programs
 if has('gui_running')
 	map <F8> :w<CR> :!gcc -Wall % -o %< && ./%<<CR>
