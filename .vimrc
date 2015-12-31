@@ -203,6 +203,9 @@ noremap <left> <NOP>
 noremap <right> <NOP>
 noremap <Space> <NOP>
 
+" Disable the use of Ex-mode
+nnoremap Q <NOP>
+
 " Compile and run C programs
 if has('gui_running')
 	map <F8> :w<CR> :!gcc -Wall % -o %< && ./%<<CR>
