@@ -35,6 +35,10 @@ nnoremap <Leader>sv :source $MYVIMRC<CR>
 "Open $MYVIMRC for editing, or use :e $MYVIMRC
 nnoremap <Leader>ev :tabedit $MYVIMRC<CR>
 
+"Vim window size
+set lines=35
+set columns=120
+
 "<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
