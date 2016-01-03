@@ -6,7 +6,7 @@ undodir=~/.vim/undo                    # undo directory
 backupdir=~/.vim/backup                # backup directory
 colorsdir=~/.vim/colors                # colors directory
 bundledir=~/.vim/bundle                # bundle directory
-dunadir=~/Code/Duna                    # Duna color scheme directory
+dunadir=~/Code/Duna/colors                    # Duna color scheme directory
 dunafile="duna.vim"                    # Duna color scheme file
 files=".bash_profile .vimrc .vim .gitconfig .ycm_extra_conf.py .git-completion.bash .git-prompt.sh"       # list of files/folders to symlink in homedir
 
