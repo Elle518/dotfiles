@@ -49,7 +49,7 @@ $ ./install.py --clang-completer
 ~~~
 
 Download the latest version of `libclang` from [LLVM.org](http://llvm.org/releases/download.html).
-Select **Clang for x86 64 Ubuntu** from the Pre-Built Binaries list.
+Select **Clang for x86 64 Ubuntu** or **Clang for Mac OS X** from the Pre-Built Binaries list as needed.
 
 ~~~
 $ mkdir ~/ycm_temp/llvm_root_dir
