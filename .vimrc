@@ -258,6 +258,16 @@ au BufWritePre,FileWritePre *.cpp exe "normal ma"
 au BufWritePre,FileWritePre *.cpp exe "1," . 7 . "g/Date modified:.*/s//Date modified: " .strftime("%d-%m-%Y")
 au BufWritePost,FileWritePost *.cpp exe "normal `a" 
 
+"Python Template"
+au BufNewFile *.py 0r ~/.vim/skeleton/skeleton.py
+au BufNewFile *.py exe "1," . 7 . "g/File:.*/s//File: " .expand("%")
+au BufNewFile *.py exe "1," . 7 . "g/Date created:.*/s//Date created: " .strftime("%d-%m-%Y")
+au BufNewFile *.py exe "1," . 7 . "g/Author:.*/s//Author: " .$USER
+au BufNewFile *.py exe "normal 3k$"
+au BufWritePre,FileWritePre *.py exe "normal ma"
+au BufWritePre,FileWritePre *.py exe "1," . 7 . "g/Date modified:.*/s//Date modified: " .strftime("%d-%m-%Y")
+au BufWritePost,FileWritePost *.py exe "normal `a" 
+
 "<~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
