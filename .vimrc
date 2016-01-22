@@ -64,6 +64,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'rkulla/pydiction'
 
 " All of your Plugins must be added before the following line
 call vundle#end()           " All plugins must be before this line
@@ -285,5 +286,8 @@ let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 
 "vim-instant-markdown
 let g:instant_markdown_autostart = 0          " Control preview manually
+
+"Pydiction
+let g:pydiction_location = '~/dotfiles/.vim/bundle/pydiction/complete-dict'
 
 "<~
