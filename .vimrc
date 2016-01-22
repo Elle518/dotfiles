@@ -282,7 +282,7 @@ let NERDTreeShowLineNumbers=1
 map <C-n> :NERDTreeToggle<CR>
 
 "YouCompleteMe
-let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/dotfiles/.ycm_extra_conf.py'
 
 "vim-instant-markdown
 let g:instant_markdown_autostart = 0          " Control preview manually
