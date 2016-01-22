@@ -48,3 +48,5 @@ Session.vim
 /.vim/backup
 /.vim/colors
 /.vim/bundle
+
+.ycm_extra_conf.pyc
