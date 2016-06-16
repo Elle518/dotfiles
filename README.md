@@ -41,9 +41,23 @@ Open `Vim` and run
 ~~~
 
 ## YCM semantic completion support for C-family languages
+We will need to have `cmake` installed in order to generate the required makefiles.
+For Linux we can install cmake with this:
 ~~~
-$ sudo apt-get install build-essential cmake
-$ sudo apt-get install python-dev
+$ sudo apt-get install cmake
+~~~
+
+For Mac users can also get it through Homebrew with `brew install cmake`.
+
+On a Unix OS, we need to make sure we have Python headers installed. On a Debian-like Linux distro, we will do:
+~~~
+$ sudo apt-get install python-dev python3-dev
+~~~
+
+On Mac they should already be present.
+
+Next, for compiling YCM with semantic support for C-family languages:
+~~~
 $ cd ~/.vim/bundle/YouCompleteMe
 $ ./install.py --clang-completer
 ~~~
@@ -52,15 +66,18 @@ Download the latest version of `libclang` from [LLVM.org](http://llvm.org/releas
 Select **Clang for x86 64 Ubuntu** or **Clang for Mac OS X** from the Pre-Built Binaries list as needed.
 
 ~~~
-$ mkdir ~/ycm_temp/llvm_root_dir
+$ mkdir ~/ycm_temp
+$ cd ~/ycm_temp/
+$ mkdir llvm_root_dir
 ~~~
 
 Extract `libclang` inside `llvm_root_dir` (with `bin`, `lib`, `include`...)
 
 ~~~
-$ cd ~/ycm_build
+$ mkdir ~/ycm_build
+$ cd ~/ycm_build/
 $ cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=~/ycm_temp/llvm_root_dir . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
-$ cmake --build . --target ycm_support_libs --config Release
+$ cmake --build . --target ycm_core --config Release
 ~~~
 
 ## vim-instant-markdown installation requirements
